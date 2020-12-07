@@ -3,12 +3,12 @@ This code enables the projection of bulk-transcriptome profiles from one dataset
 
 
 Requirements:
-Python 3.6 or higher
-Numpy
-Scikit-learn
-UMAP (https://github.com/lmcinnes/umap)
-Scipy
-Numba
+Python 3.6 or higher,
+Numpy,
+Scikit-learn,
+UMAP (https://github.com/lmcinnes/umap),
+Scipy,
+Numba,
 Seaborn
 
 Run this code:
