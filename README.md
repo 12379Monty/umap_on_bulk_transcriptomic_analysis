@@ -3,13 +3,13 @@ This code enables the projection of bulk-transcriptome profiles from one dataset
 
 
 Requirements:
-Python 3.6 or higher,
-Numpy,
-Scikit-learn,
-UMAP (https://github.com/lmcinnes/umap),
-Scipy,
-Numba,
-Seaborn
+1) Python 3.6 or higher,
+2) Numpy,
+3) Scikit-learn,
+4) UMAP (https://github.com/lmcinnes/umap),
+5) Scipy,
+6) Numba,
+7) Seaborn
 
 Run this code:
 The input is the sample-gene matrix together with group labels.
