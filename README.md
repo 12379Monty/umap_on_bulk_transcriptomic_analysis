@@ -13,6 +13,7 @@ Requirements:
 8) openTSNE (https://github.com/pavlin-policar/openTSNE)
 
 Run this code:
-The input is the sample-gene matrix together with group labels.
+The input is the sample-gene matrix together with group labels, sledai_score, patient_id, visit_label, visit_date_label and day_from_start curated from GEO website
+https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE121239
 
 Output: Figure 5a-e, Figure 6a,c
