@@ -10,8 +10,9 @@ import matplotlib.pyplot as plt
 
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
-from sklearn.manifold import TSNE
+# from sklearn.manifold import TSNE
 from sklearn.manifold import MDS
+from openTSNE import TSNE
 import umap
 
 from sklearn.cluster import KMeans
@@ -56,7 +57,7 @@ label_group = label_group.astype(int)
 
 # UMAP
 t0 = time()
-reducer = umap.UMAP(n_components = 2, random_state=143)
+reducer = umap.UMAP(n_components = 2, random_state=143, n_jobs=-1, negative_gradient_method='bh')
 embedding_umap = reducer.fit_transform(data_no_label)
 t1 = time()
 print('UMAP running time is: ' + str(t1-t0) + ' s' )
@@ -68,7 +69,7 @@ plt.axis('off')
 
 # tSNE
 t0 = time()
-embedding_tsne = TSNE(n_components=2).fit_transform(data_no_label )
+embedding_tsne = TSNE(n_components=2, random_state=42, n_jobs=-1, negative_gradient_method='bh').fit(data_no_label)
 t1 = time()
 print('t-SNE running time is: ' + str(t1-t0) + ' s' )
 
@@ -78,7 +79,7 @@ plt.axis('off')
 
 # MDS
 t0 = time()
-embedding_mds = MDS(n_components=2).fit_transform(data_no_label )
+embedding_mds = MDS(n_components=2, n_jobs=-1).fit_transform(data_no_label )
 t1 = time()
 print('MDS running time is: ' + str(t1-t0) + ' s' )
 
