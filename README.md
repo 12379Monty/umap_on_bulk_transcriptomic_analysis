@@ -6,10 +6,11 @@ Requirements:
 1) Python 3.6 or higher,
 2) Numpy,
 3) Scikit-learn,
-4) UMAP (https://github.com/lmcinnes/umap),
-5) Scipy,
-6) Numba,
-7) Seaborn
+4) Scipy,
+5) Numba,
+6) Seaborn,
+7) UMAP (https://github.com/lmcinnes/umap),
+8) openTSNE (https://github.com/pavlin-policar/openTSNE)
 
 Run this code:
 The input is the sample-gene matrix together with group labels.
