@@ -44,6 +44,9 @@ data_no_label.drop(data_no_label.columns[[0,1]], axis = 1, inplace = True)
 data_no_label = data_no_label.to_numpy()
 data_no_label = np.transpose(data_no_label) 
 
+# log_2 transformation
+# data_no_label= np.log2(data_no_label)
+
 label_group.drop(label_group.columns[[0,1]], axis = 1, inplace = True)
 label_group = label_group.to_numpy()
 label_group = label_group[0,:]
